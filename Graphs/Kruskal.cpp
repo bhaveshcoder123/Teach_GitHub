@@ -56,8 +56,6 @@ class DSU {
 class Solution {
   public:
     int kruskalsMST(int V, vector<vector<int>> &edges) {
-        
-        
         sort(edges.begin() , edges.end() , comp);
         int cost = 0;
         DSU dsu(V);
